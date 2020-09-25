@@ -1,0 +1,32 @@
+-------------------- Auto-Git Log --------------------
+		Fri Sep 25 2020 17:31:32 GMT+0000 (Greenwich Mean Time)
+------------------------------------------------------
+
+Modified files:
+* pom.xml
+* src/main/webapp/app/home/home.component.html
+* src/main/webapp/app/layouts/footer/footer.component.html
+* src/main/webapp/app/layouts/main/main.component.html
+* src/main/webapp/app/layouts/navbar/navbar.component.html
+* src/main/webapp/app/shared/login/login.component.html
+* src/main/webapp/app/shared/login/login.component.ts
+* src/main/webapp/app/shared/refresh/refresh-selector.component.html
+* src/main/webapp/app/shared/refresh/refresh-selector.component.ts
+* src/main/webapp/app/shared/routes/route-selector.component.html
+* src/main/webapp/index.html
+* src/main/webapp/swagger-ui/index.html
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+* src/test/java/io/github/jhipster/registry/config/package-info.java
+* src/test/java/io/github/jhipster/registry/security/package-info.java
+* src/test/java/io/github/jhipster/registry/web/rest/errors/package-info.java
+* src/test/java/io/github/jhipster/registry/web/rest/package-info.java
+* src/test/java/io/github/jhipster/registry/web/rest/vm/package-info.java
+
+
+Renamed files:

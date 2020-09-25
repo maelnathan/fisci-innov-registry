@@ -79,7 +79,7 @@ export class RefreshSelectorComponent implements OnInit, OnDestroy {
 
   getActiveRefreshTime(): string {
     if (this.activeRefreshTime <= 0) {
-      return 'disabled';
+      return 'désactivé';
     }
     return this.activeRefreshTime + ' sec.';
   }

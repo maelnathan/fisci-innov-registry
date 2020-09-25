@@ -1,13 +1,13 @@
 <div [ngSwitch]="isAuthenticated()">
-    <h1 class="text-center">JHipster Registry <small>{{version}}</small></h1>
+    <h1 class="text-center">FiscInov Service d'enregistrement</h1>
     <div class="row">
         <div class="col-md-12 text-center">
             <div *ngSwitchCase="true">
                 <jhi-refresh-selector class="float-right refresh-left-side"></jhi-refresh-selector>
             </div>
             <div class="alert alert-warning" *ngSwitchCase="false">
-                <span>You are not authenticated.</span>
-                <a class="alert-link" (click)="login()">Please sign in</a>
+                <span>Vous n'êtes pas authentifié.</span>
+                <a class="alert-link" (click)="login()">Veuillez vous connecter</a>
             </div>
         </div>
     </div>
@@ -15,29 +15,29 @@
         <div class="col-sm-12 col-md-6" *ngIf="status">
             <div class="card">
                 <div class="card-header text-white bg-primary">
-                    <h3 class="card-title">System Status</h3>
+                    <h3 class="card-title">État du système</h3>
                 </div>
                 <div class="card-block">
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td>Environment</td>
+                            <td>Environnement</td>
                             <td>{{status.environment}}</td>
                         </tr>
                         <tr>
-                            <td>Data Center</td>
+                            <td>Centre de données</td>
                             <td>{{status.datacenter}}</td>
                         </tr>
                         <tr>
-                            <td>Current Time</td>
+                            <td>Heure actuelle</td>
                             <td>{{status.currentTime}}</td>
                         </tr>
                         <tr>
-                            <td>System Uptime</td>
+                            <td>Disponibilité du système</td>
                             <td>{{status.upTime}}</td>
                         </tr>
                         <tr>
-                            <td>Below Renew Threshold</td>
+                            <td>Sous le seuil de renouvellement</td>
                             <td>{{status.isBelowRenewThreshold}}</td>
                         </tr>
                         </tbody>
@@ -48,7 +48,7 @@
         <div class="col-sm-12 col-md-6" *ngIf="appInstances">
             <div class="card">
                 <div class="card-header text-white bg-primary">
-                    <h3 class="card-title">Instances Registered</h3>
+                    <h3 class="card-title">Instances enregistrées</h3>
                 </div>
                 <div class="card-block">
                     <!--{vm.apps.applications}}-->
@@ -57,7 +57,7 @@
                         <tr>
                             <th>App</th>
                             <th>Instance ID</th>
-                            <th>Status</th>
+                            <th>Statut</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -80,29 +80,29 @@
         <div class="col-sm-12 col-md-6" *ngIf="status">
             <div class="card">
                 <div class="card-header text-white bg-primary">
-                    <h3 class="card-title">General Info</h3>
+                    <h3 class="card-title">Information Générale</h3>
                 </div>
                 <div class="card-block">
                     <table class="table">
                         <tbody>
                         <tr>
-                            <td>Total Available Memory</td>
+                            <td>Mémoire totale disponible</td>
                             <td>{{status.generalStats['total-avail-memory']}}</td>
                         </tr>
                         <tr>
-                            <td>Current Memory Usage</td>
+                            <td>Utilisation actuelle de la mémoire</td>
                             <td>{{status.generalStats['current-memory-usage']}}</td>
                         </tr>
                         <tr>
-                            <td>Number of CPU</td>
+                            <td>Nombre de CPU</td>
                             <td>{{status.generalStats['num-of-cpus']}}</td>
                         </tr>
                         <tr>
-                            <td>Instance Ip Address</td>
+                            <td>Adresse IP de l'Instance</td>
                             <td>{{status.instanceInfo.ipAddr}}</td>
                         </tr>
                         <tr>
-                            <td>Instance Status</td>
+                            <td>Statut de l'Instance</td>
                             <td>
                                 <span class="badge badge-pill font-weight-normal" [ngClass]="getBadgeClass(status.instanceInfo.status)">
                                     {{status.instanceInfo.status}}
@@ -117,7 +117,7 @@
         <div class="col-sm-12 col-md-6" *ngIf="health">
             <div class="card">
                 <div class="card-header text-white bg-primary">
-                    <h3 class="card-title">Health</h3>
+                    <h3 class="card-title">Etat de santé</h3>
                 </div>
                 <div class="card-block">
                     <table id="healthCheck" class="table">
